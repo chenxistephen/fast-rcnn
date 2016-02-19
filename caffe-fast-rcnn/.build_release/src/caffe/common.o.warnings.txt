@@ -1,0 +1,8 @@
+src/caffe/common.cpp:28:10: warning: absolute value function 'abs' given an argument of type 'long long' but has parameter of type 'int' which may cause truncation of value [-Wabsolute-value]
+  seed = abs(((s * 181) * ((pid - 83) * 359)) % 104729);
+         ^
+src/caffe/common.cpp:28:10: note: use function 'std::abs' instead
+  seed = abs(((s * 181) * ((pid - 83) * 359)) % 104729);
+         ^~~
+         std::abs
+1 warning generated.
